@@ -1,24 +1,97 @@
 <!DOCTYPE html>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" type="text/css" href="groupProject.css">
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script type="text/javascript" src="groupProject.js" DEFER></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustainable Eating</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #333;
+      }
 
-<h1>Sustainable Eats!</h1>
+      header {
+        background-color: #fff;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-<div>
-    <button id = "learn">Learn More</button> <button id = calender>See when foods are in season!</button>
-     Ask for name/ survey food choices → informative page about sustainable eating and what organic means
-</div>
+      .logo {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-left: 20px;
+      }
 
-<div class="minor-section">
-    <h2>Welcome!</h2>
-        <div>Information about our project/why its important to eat sustainably.</div>
-</div>
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        margin: 0 15px;
+      }
 
+      nav a:hover {
+        text-decoration: underline;
+      }
 
+      section {
+        padding: 40px 20px;
+        border-bottom: 1px solid #eee;
+      }
 
+      .news-grid {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+      }
 
+      .news-box {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Sustainable Eating!</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#map">Map</a>
+        <a href="calender/calender.html">Calendar</a>
+        <a href="#info">Info</a>
+      </nav>
+    </header>
 
+    <section id="home">
+      <h2 style="text-align: center">News Highlights</h2>
+      <div class="news-grid">
+        <div class="news-box">News 1</div>
+        <div class="news-box">News 2</div>
+        <div class="news-box">News 3</div>
+      </div>
+    </section>
 
+    <section id="about">
+      <h2>Welcome!</h2>
+      <p>Learn more about sustainable eating and why it's important.</p>
+    </section>
+
+    <h2>Let us get to know you more!</h2>
+    <p>This helps us know what foods you're into each month!</p>
+    <a href="foodQuiz/Quiz.html" class="quiz-button">Take Our Quiz</a>
+
+    <section id="info">
+      <h2>Events</h2>
+      <p>Check back soon for upcoming local food sustainability events!</p>
+    </section>
+  </body>
+</html>
