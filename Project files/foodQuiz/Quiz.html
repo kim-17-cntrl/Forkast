@@ -1,1 +1,161 @@
-Quiz
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sustainable Food Survey</title>
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-color: #ffeeee;
+        color: #333;
+        text-align: center;
+        padding: 40px;
+      }
+
+      .survey-box {
+        background-color: #ffd6e8;
+        padding: 30px;
+        border-radius: 25px;
+        border: 3px solid #ff99cc;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 3px 3px 15px rgba(255, 182, 193, 0.5);
+      }
+
+      .question {
+        margin-bottom: 20px;
+        font-size: 1.4em;
+        font-weight: bold;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 8px;
+      }
+
+      .answers {
+        margin: 20px 0;
+      }
+
+      .answers label {
+        display: block;
+        font-size: 1.2em;
+        margin: 5px;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        width: 60%;
+        font-size: 1em;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        margin: 10px 15px;
+        padding: 12px 24px;
+        background-color: #ff80b3;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 1em;
+        color: white;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #ff66a3;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="survey-box" id="step1">
+      <h2>Welcome to our Survey!</h2>
+      <div class="question">What's your name?</div>
+      <input type="text" id="name" placeholder="Enter your name " />
+      <br /><br />
+      <button onclick="nextStep()">Next</button>
+    </div>
+
+    <div class="survey-box hidden" id="step2">
+      <div class="question">
+        Which sustainable foods do you like or looking for?
+      </div>
+      <div class="answers">
+        <label><input type="checkbox" value="Fruit" /> Fruit</label>
+        <label><input type="checkbox" value="Protein" /> Protein</label>
+        <label
+          ><input type="checkbox" value="Fresh Veggies" /> Fresh Veggies</label
+        >
+        <label><input type="checkbox" value="Anything" /> Anything</label>
+      </div>
+      <button onclick="prevStep()">Back</button>
+      <button onclick="nextStep()">Next</button>
+    </div>
+
+    <div class="survey-box hidden" id="step3">
+      <div class="question">How often do you eat sustainable foods?</div>
+      <div class="answers">
+        <label><input type="checkbox" name="freq" value="Daily" /> Daily</label>
+        <label
+          ><input type="checkbox" name="freq" value="Weekly" /> Weekly</label
+        >
+        <label
+          ><input type="checkbox" name="freq" value="Sometimes" />
+          Sometimes</label
+        >
+        <label
+          ><input type="checkbox" name="freq" value="Rarely" /> Rarely</label
+        >
+      </div>
+      <button onclick="prevStep()">Back</button>
+      <button onclick="nextStep()">Submit</button>
+    </div>
+
+    <div class="survey-box hidden" id="thankyou">
+      <h2>Thank you, <span id="userName"></span>!</h2>
+      <p>
+        This helps us know what foods you're into each month. We appreciate your
+        input!
+      </p>
+    </div>
+
+    <script>
+      let currentStep = 1;
+
+      function showStep(step) {
+        for (let i = 1; i <= 4; i++) {
+          const el = document.getElementById(`step${i}`);
+          if (el) el.classList.add("hidden");
+        }
+        if (step === 4) {
+          document.getElementById("thankyou").classList.remove("hidden");
+        } else {
+          document.getElementById(`step${step}`).classList.remove("hidden");
+        }
+      }
+
+      function nextStep() {
+        if (currentStep === 1) {
+          const name = document.getElementById("name").value.trim();
+          if (!name) {
+            alert("Please enter your name.");
+            return;
+          }
+          document.getElementById("userName").innerText = name;
+        }
+        currentStep++;
+        showStep(currentStep);
+      }
+
+      function prevStep() {
+        if (currentStep > 1) {
+          currentStep--;
+          showStep(currentStep);
+        }
+      }
+    </script>
+  </body>
+</html>
