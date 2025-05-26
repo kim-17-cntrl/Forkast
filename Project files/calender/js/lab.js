@@ -14,8 +14,8 @@ const seasonalFoodsJune = {
   
   // Details about each food (could be expanded)
   const foodDetails = {
-    'Cherries': 'Cherries are rich in antioxidants and are perfect for fresh eating or baking.',
-    'Strawberries': 'Strawberries are high in vitamin C and great in salads or desserts.',
+    'Cherries': 'Cherries are rich in antioxidants.',
+    'Strawberries': 'Strawberries are high in vitamin C.',
     'Lettuce': 'Lettuce is a leafy green that grows well in cooler weather.',
     'Radishes': 'Radishes add a peppery crunch to salads and are fast-growing root veggies.',
     'Tomatoes': 'Tomatoes are juicy fruits commonly used in sauces and salads.',
