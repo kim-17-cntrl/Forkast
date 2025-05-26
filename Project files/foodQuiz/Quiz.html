@@ -71,30 +71,44 @@
   </head>
   <body>
     <div class="survey-box" id="step1">
-      <h2>Welcome to our Survey!</h2>
+      <h2>Let's get to know you a little better to personalize your sustainable food journey!</h2>
       <div class="question">What's your name?</div>
-      <input type="text" id="name" placeholder="Enter your name " />
-      <br /><br />
+      <input type="text" id="name" placeholder="Enter your name"/>
+      <br/><br/>
       <button onclick="nextStep()">Next</button>
     </div>
 
-    <div class="survey-box hidden" id="step2">
-      <div class="question">
-        Which sustainable foods do you like or looking for?
+    <div class="survey-box" id="step2">
+      <div class="question">Are you a student?</div>
+      <div class="answers">
+        <label><input type="checkbox" value="Yes" /> Yes</label>
+        <label><input type="checkbox" value="No" /> No</label>
       </div>
+      <button onclick="prevStep()">Back</button>
+      <button onclick="nextStep()">Next</button>
+    </div>
+
+    <div class="survey-box" id="step3"></div>
+      <div class="question">What is your zipcode?</div>
+      <input type="text" id="Zipcode" placeholder="Enter your zipcode"/>
+      <br/><br/>
+      <button onclick="prevStep()">Back</button>
+      <button onclick="nextStep()">Next</button>
+    </div>
+
+    <div class="survey-box hidden" id="step4">
+      <div class="question"> Which sustainable foods do you like or looking for? </div>
       <div class="answers">
         <label><input type="checkbox" value="Fruit" /> Fruit</label>
         <label><input type="checkbox" value="Protein" /> Protein</label>
-        <label
-          ><input type="checkbox" value="Fresh Veggies" /> Fresh Veggies</label
-        >
+        <label><input type="checkbox" value="Fresh Veggies" /> Fresh Veggies</label>
         <label><input type="checkbox" value="Anything" /> Anything</label>
       </div>
       <button onclick="prevStep()">Back</button>
       <button onclick="nextStep()">Next</button>
     </div>
 
-    <div class="survey-box hidden" id="step3">
+    <div class="survey-box hidden" id="step5">
       <div class="question">How often do you eat sustainable foods?</div>
       <div class="answers">
         <label><input type="checkbox" name="freq" value="Daily" /> Daily</label>
@@ -116,7 +130,7 @@
     <div class="survey-box hidden" id="thankyou">
       <h2>Thank you, <span id="userName"></span>!</h2>
       <p>
-        This helps us know what foods you're into each month. We appreciate your
+        This helps us know what foods you're into each month, and how to help you acess them. We appreciate your
         input!
       </p>
     </div>
