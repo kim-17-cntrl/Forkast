@@ -38,6 +38,19 @@ const seasonalFoodsJune = {
   
   // Details about each food (could be expanded)
   const foodDetails = {
+    'Cherries': 'Cherries are rich in antioxidants.',
+    'Strawberries': 'Strawberries are high in vitamin C.',
+    'Lettuce': 'Lettuce is a leafy green that grows well in cooler weather.',
+    'Radishes': 'Radishes add a peppery crunch to salads and are fast-growing root veggies.',
+    'Tomatoes': 'Tomatoes are juicy fruits commonly used in sauces and salads.',
+    'Zucchini': 'Zucchini is a summer squash that can be grilled, baked, or spiralized.',
+    'Cucumbers': 'Cucumbers are refreshing and hydrating, perfect for summer dishes.',
+    'Peaches': 'Peaches are sweet stone fruits best enjoyed fresh or in pies.',
+    'Corn': 'Corn is a staple summer crop, often grilled or boiled on the cob.',
+    'Blueberries': 'Blueberries are nutrient-rich berries excellent for snacking and baking.',
+    'Melons': 'Melons are hydrating fruits that come in many varieties like cantaloupe and honeydew.',
+    'Eggplant': 'Eggplant is a versatile vegetable used in many cuisines worldwide.',
+    'Bell Peppers': 'Bell Peppers come in many colors and add crunch and sweetness to meals.',
     'UCSC Farm Tour': 'UCSC Farm Tour: Take a free, guided tour of the 30-acre organic UCSC Farm. Visitors can enjoy touring the organically managed greenhouses, hand-worked garden beds, orchards, row crop fields, and childrens garden, while learning about the history of the site and the basic concepts of organic farming and gardening. Perched on a meadow near the campus entrance, the farm also offers spectacular views of the Monterey Bay. Location: 1008 Ranch View Road, Santa Cruz, California 95064 Hours: 2PM-3:30PM Cost Barrier: None',
     'Produce Pop-Up': 'Produce Pop Up: Provides fresh seasonal produce predominantly grown on the UCSC farm and gardens by UCSC students. As a part of Basic Needs, Produce Pop-Up aims to provide low-cost and free healthy, organic food for all. Location: Quarry Plaza (Wednesdays), Science Hill, in front of the Science & Engineering Library (Fridays), Hours: 11AM-3PM, Cost Barrier: Low, most foods $1-5.',
     'Berry U-Pick': 'Berry U-Pick at UCSC Farm: Enjoy picking fresh strawberries and blueberries! Location: Farm Road, Santa Cruz, California 95064 \n Hours: 9AM-12PM \n Cost barrier: Unknown, but flats and pint containers will be available for a flat rate. Please bring a credit card and smartphone for payment (you will need to scan a QR code). \n Notes: We recommend you wear layers, a hat, sunscreen, and closed-toe shoes you can comfortably move around in. Please park in parking lot 116 on the UC Santa Cruz campus or take public transportation.',
