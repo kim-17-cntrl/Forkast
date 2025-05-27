@@ -78,7 +78,7 @@
       <button onclick="nextStep()">Next</button>
     </div>
 
-    <div class="survey-box" id="step2">
+    <div class="survey-box hidden" id="step2">
       <div class="question">Are you a student?</div>
       <div class="answers">
         <label><input type="checkbox" value="Yes" /> Yes</label>
@@ -88,9 +88,11 @@
       <button onclick="nextStep()">Next</button>
     </div>
 
-    <div class="survey-box" id="step3"></div>
+    <div class="survey-box hidden" id="step3">
       <div class="question">What is your zipcode?</div>
-      <input type="text" id="Zipcode" placeholder="Enter your zipcode"/>
+      <div class="answers">
+      <label><input type="text" id="Zipcode" placeholder="Enter your zipcode"/></label>
+    </div>
       <br/><br/>
       <button onclick="prevStep()">Back</button>
       <button onclick="nextStep()">Next</button>
@@ -131,7 +133,8 @@
       <h2>Thank you, <span id="userName"></span>!</h2>
       <p>
         This helps us know what foods you're into each month, and how to help you acess them. We appreciate your
-        input!
+        input! <br>
+      <button id="nextStepButton">Next Step</button>
       </p>
     </div>
 
@@ -139,11 +142,11 @@
       let currentStep = 1;
 
       function showStep(step) {
-        for (let i = 1; i <= 4; i++) {
+        for (let i = 1; i <= 6; i++) {
           const el = document.getElementById(`step${i}`);
           if (el) el.classList.add("hidden");
         }
-        if (step === 4) {
+        if (step === 6) {
           document.getElementById("thankyou").classList.remove("hidden");
         } else {
           document.getElementById(`step${step}`).classList.remove("hidden");
@@ -169,6 +172,11 @@
           showStep(currentStep);
         }
       }
+
+      document.getElementById("nextStepButton").onclick = function () {
+                  window.location.href = "../calender/calender.html";
+              };
+
     </script>
   </body>
 </html>
