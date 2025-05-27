@@ -1,1 +1,0 @@
-This website aims to empower the people of Santa Cruz to take back more control of their food, and learn about the pathways, and opprotunities that exist for more sustainable, fresh, and local food than chain grocery stores can offer. 
