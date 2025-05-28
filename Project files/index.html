@@ -3,117 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sustainable Eating</title>
+    <title>Forkast – Sustainable Eating</title>
     <style>
       body {
+        font-family: 'Open Sans', sans-serif;
+        background: #F5F5DC;
+        color: #46bbb6;
         margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #ffffff;
-        color: #333;
+        padding: 0;
       }
 
-<<<<<<< HEAD
-<h1>Forkast</h1>
-=======
       header {
-        background-color: #fff;
-        padding: 20px;
-        border-bottom: 1px solid #ddd;
+        background-color: #ffffff;
+        padding: 20px 40px;
+        border-bottom: 2px solid #D0E8D0;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
       }
->>>>>>> b9037ebc21226b08e504e092f2a3e3845ea69f04
 
       .logo {
-        font-size: 1.8em;
+        font-size: 1.8rem;
         font-weight: bold;
-        margin-left: 20px;
+        color: #46bbb6;
       }
 
-<<<<<<< HEAD
-<div class="minor-section">
-    <h2>Welcome!</h2>
-        <div> Information about our project/why its important to eat sustainably.</div>
-</div>
-=======
       nav a {
         text-decoration: none;
-        color: #333;
-        font-weight: bold;
+        color: #46bbb6;
+        font-weight: 600;
         margin: 0 15px;
+        transition: color 0.3s ease;
       }
->>>>>>> b9037ebc21226b08e504e092f2a3e3845ea69f04
 
       nav a:hover {
-        text-decoration: underline;
+        color: #1B5E20;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 30px;
+      }
+
+      .minor-section {
+        text-align: center;
+        margin: 20px auto;
+        padding: 20px;
+        background: #D0E8D0;
+        border-radius: 12px;
+        max-width: 700px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
       }
 
       section {
         padding: 40px 20px;
-        border-bottom: 1px solid #eee;
+        max-width: 900px;
+        margin: auto;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 15px;
       }
 
       .news-grid {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
         margin-top: 20px;
       }
 
       .news-box {
-        border: 1px solid #ddd;
-        border-radius: 8px;
+        background: #D0E8D0;
+        border-radius: 10px;
         padding: 20px;
         width: 200px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: center;
+      }
+
+      .quiz-button {
+        display: inline-block;
+        background-color: #A3D77A;
+        color: #1B5E20;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        margin-top: 15px;
+        transition: background-color 0.3s ease;
+      }
+
+      .quiz-button:hover {
+        background-color: #7CB342;
       }
     </style>
   </head>
+
   <body>
     <header>
-      <div class="logo">Sustainable Eating!</div>
+      <div class="logo">Forkast</div>
       <nav>
         <a href="index.html">Home</a>
-        <a href="#about">About</a>
+        <a href="aboutus/index.html">About</a>
         <a href="map/map.html">Map</a>
-
         <a href="calender/calender.html">Calendar</a>
         <a href="#info">Info</a>
       </nav>
     </header>
 
+    <h1>your guide to sustainable eating</h1>
+
+    <div class="minor-section">
+      <h2>Welcome to Forkast!</h2>
+      <p>
+        A guide to local and seasonal eating in Santa Cruz for UCSC Students. Explore pop-ups,
+        farmers markets, and fresh produce near you!
+      </p>
+    </div>
+
     <section id="home">
-      <h2 style="text-align: center">News Highlights</h2>
+      <h2>News Highlights</h2>
       <div class="news-grid">
-        <div class="news-box">News 1</div>
-        <div class="news-box">News 2</div>
-        <div class="news-box">News 3</div>
+        <div class="news-box">News</div>
+        <div class="news-box">News</div>
+        <div class="news-box">News</div>
       </div>
     </section>
 
     <section id="about">
-      <h2>Welcome!</h2>
-      <p>Learn more about sustainable eating and why it's important.</p>
+      <h2>Why Sustainable Eating?</h2>
+      <p style="text-align: center; max-width: 600px; margin: auto;">
+        Eating seasonally and locally supports small farms, reduces emissions,
+        and nourishes our community. Join us in making better food choices.
+      </p>
+    </section>
+    <section id="quiz">
+      <h2>Let Us Get to Know You!</h2>
+      <p style="text-align: center;">
+        Take our quick quiz to help us know what foods you're into each month!
+      </p>
+      <div style="text-align: center;">
+        <a href="foodQuiz/Quiz.html" class="quiz-button">Take Our Quiz</a>
+      </div>
     </section>
 
-    <section id = "quiz">
-    <h2>Let us get to know you more!</h2>
-    <p>This helps us know what foods you're into each month!</p>
-    <a href="foodQuiz/Quiz.html" class="quiz-button">Take Our Quiz</a>
-  </section>
-  
     <section id="info">
-
-        <h2>Events</h2>
-        <p>Check back soon for upcoming local food sustainability events!</p>
-
-        <div class="news-grid">
-          <div class="news-box">Event 1</div>
-          <div class="news-box">Event 2</div>
-          <div class="news-box">Event 3</div>
-        </div>
-      </section>
+      <h2>Upcoming Events</h2>
+      <p style="text-align: center;">Mark your calendar for these exciting community food events!</p>
+      <div class="news-grid">
+        <div class="news-box">Berry U-Pick – June 8</div>
+        <div class="news-box">Produce Pop-Up – June 15</div>
+        <div class="news-box">Growing Citrus Workshop – July 6</div>
+      </div>
     </section>
-  </body>
-</html>

@@ -1,46 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Local Produce Map</title>
-    <link rel="stylesheet" href="css/groupProject.css" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
-        background: white;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local Produce Map</title>
 
-      h1 {
-        text-align: center;
-      }
+  <style>
+    /* Body and general styling */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #F5F5DC;
+      color: #46bbb6;
+      margin: 0;
+      padding: 0;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .map-container {
-        max-width: 800px;
-        margin: 20px auto;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        padding: 10px;
-      }
+    /* Header styles */
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      border-bottom: 2px solid #D0E8D0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      box-sizing: border-box;
+    }
 
-      iframe {
-        width: 100%;
-        height: 450px;
-        border: 0;
-        border-radius: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Local Produce in Santa Cruz</h1>
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.619936149507!2d-122.03079672402894!3d36.97411787223783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e406098c6e7d1%3A0x33b1bc1efb0dd41a!2sSanta%20Cruz%20Farmer&#39;s%20Market!5e0!3m2!1sen!2sus!4v1684793898217!5m2!1sen!2sus"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      >
-      </iframe>
-    </div>
-  </body>
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #46bbb6;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #46bbb6;
+      font-weight: 600;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #1B5E20;
+    }
+
+    /* Page title */
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    /* Map container */
+    .map-container {
+      max-width: 800px;
+      margin: 20px auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      background: white;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Forkast</div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../aboutus/index.html">About</a>
+      <a href="map.html">Map</a>
+      <a href="../calender/calender.html">Calendar</a>
+      <a href="../index.html#info">Info</a>
+    </nav>
+  </header>
+
+  <h1>Local Produce in Santa Cruz</h1>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.619936149507!2d-122.03079672402894!3d36.97411787223783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e406098c6e7d1%3A0x33b1bc1efb0dd41a!2sSanta%20Cruz%20Farmer's%20Market!5e0!3m2!1sen!2sus!4v1684793898217!5m2!1sen!2sus"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</body>
 </html>

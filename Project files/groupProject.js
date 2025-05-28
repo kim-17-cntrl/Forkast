@@ -1,7 +1,10 @@
-$("#learn").click(function(){
-    window.location.href = "Learnmore/learnMore.html";
-})
-
-$("#calender").click(function(){
-    window.location.href = "calender/calender.html";
-})
+$(document).ready(function() {
+    $("#learn").on("click", function() {
+      window.location.href = "Learnmore/learnMore.html";
+    });
+  
+    $("#calendar").on("click", function() {
+      window.location.href = "calendar/calendar.html";
+    });
+  });
+  
