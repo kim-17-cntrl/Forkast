@@ -1,15 +1,16 @@
+
 header {
   background-color: #ffffff;
-  padding: 20px 40px;
+  padding: 40px 40px;
   border-bottom: 2px solid #D0E8D0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   width: 100%;  /* make sure it stretches */
+  max-width: 100px;
+  margin: 0 auto;
 }
-
-
 
 
 .logo {
@@ -30,6 +31,7 @@ nav a {
   transition: color 0.3s ease;
 }
 
+/* Nav links hover */
 nav a:hover {
   color: #2d8b89;
 }
@@ -38,9 +40,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #F5F5DC;
     color: #46bbb6;
-    padding: 20px;
-    max-width: 700px;
-    margin: auto;
+    padding: 0px;
+    max-width: 1100px;
+    margin: 0px;
   }
   
   h1 {
