@@ -6,21 +6,25 @@
     <title>Forkast – Sustainable Eating</title>
     <style>
       body {
-        font-family: 'Open Sans', sans-serif;
-        background: #F5F5DC;
+        font-family: "Open Sans", sans-serif;
+        background: #f5f5dc;
         color: #46bbb6;
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
       }
 
       header {
         background-color: #ffffff;
         padding: 20px 40px;
-        border-bottom: 2px solid #D0E8D0;
+        border-bottom: 2px solid #d0e8d0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       }
 
       .logo {
@@ -34,33 +38,39 @@
         color: #46bbb6;
         font-weight: 600;
         margin: 0 15px;
-        transition: color 0.3s ease;
+        padding: 8px 12px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease, color 0.3s ease;
       }
 
       nav a:hover {
-        color: #1B5E20;
+        background-color: #d0e8d0;
+        color: #1b5e20;
       }
 
       h1 {
         text-align: center;
         font-size: 2.5rem;
         margin-top: 30px;
+        animation: fadeIn 1s ease-in;
       }
 
       .minor-section {
         text-align: center;
         margin: 20px auto;
-        padding: 20px;
-        background: #D0E8D0;
+        padding: 25px;
+        background: #d0e8d0;
         border-radius: 12px;
         max-width: 700px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+        animation: slideUp 0.6s ease-in-out;
       }
 
       section {
         padding: 40px 20px;
         max-width: 900px;
         margin: auto;
+        border-top: 1px solid #e3f0e3;
       }
 
       h2 {
@@ -77,28 +87,65 @@
       }
 
       .news-box {
-        background: #D0E8D0;
+        background: #d0e8d0;
         border-radius: 10px;
         padding: 20px;
         width: 200px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
         text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .news-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
       }
 
       .quiz-button {
         display: inline-block;
-        background-color: #A3D77A;
-        color: #1B5E20;
+        background-color: #46bbb6;
+        color: #ffffff;
         font-weight: bold;
-        padding: 10px 20px;
-        border-radius: 8px;
+        padding: 12px 24px;
+        border-radius: 10px;
         text-decoration: none;
         margin-top: 15px;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, transform 0.3s ease;
       }
 
       .quiz-button:hover {
-        background-color: #7CB342;
+        background-color: #3f9c97;
+        transform: scale(1.05);
+      }
+
+      footer {
+        background-color: #ffffff;
+        color: #46bbb6;
+        text-align: center;
+        padding: 20px;
+        border-top: 2px solid #d0e8d0;
+        margin-top: 40px;
+        font-size: 0.9rem;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     </style>
   </head>
@@ -115,48 +162,89 @@
       </nav>
     </header>
 
-    <h1>your guide to sustainable eating</h1>
+    <h1>Your guide to sustainable eating!</h1>
 
     <div class="minor-section">
       <h2>Welcome to Forkast!</h2>
       <p>
-        A guide to local and seasonal eating in Santa Cruz for UCSC Students. Explore pop-ups,
-        farmers markets, and fresh produce near you!
+        A guide to local and seasonal eating in Santa Cruz for UCSC Students.
+        Explore pop-ups, farmers markets, and fresh produce near you!
       </p>
     </div>
 
     <section id="home">
       <h2>News Highlights</h2>
       <div class="news-grid">
-        <div class="news-box">News</div>
-        <div class="news-box">News</div>
-        <div class="news-box">News</div>
+        <div class="news-box">
+          <p style="font-weight: bold; font-size: 0.9rem">Pop-Up Breakfast</p>
+          <p style="font-size: 0.75rem">
+            Local chefs serve seasonal breakfast dishes fresh at the market.
+          </p>
+          <p style="font-size: 0.7rem; color: #347a76">
+            June 1 · Santa Cruz Farmers Market
+          </p>
+        </div>
+
+        <div class="news-box">
+          <p style="font-weight: bold; font-size: 0.9rem">
+            Downtown Santa Cruz Market
+          </p>
+          <p style="font-size: 0.75rem">
+            Weekly downtown market with fresh produce, live music & local
+            vendors.
+          </p>
+          <p style="font-size: 0.7rem; color: #347a76">
+            Every Wednesday · Cedar St<br />
+            <a
+              href="https://downtownsantacruz.com/events/downtown-markets"
+              style="font-size: 0.65rem; color: #1b5e20"
+              target="_blank"
+              >More info</a
+            >
+          </p>
+        </div>
+
+        <div class="news-box">
+          <p style="font-weight: bold; font-size: 0.9rem">
+            Savings From the Sea
+          </p>
+          <p style="font-size: 0.75rem">
+            Huge seafood sale! Enjoy sustainably sourced fish & free samples.
+          </p>
+          <p style="font-size: 0.7rem; color: #347a76">
+            June 6–8 · New Leaf Market, Capitola
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="about">
       <h2>Why Sustainable Eating?</h2>
-      <p style="text-align: center; max-width: 600px; margin: auto;">
+      <p style="text-align: center; max-width: 600px; margin: auto">
         Eating seasonally and locally supports small farms, reduces emissions,
         and nourishes our community. Join us in making better food choices.
       </p>
     </section>
     <section id="quiz">
       <h2>Let Us Get to Know You!</h2>
-      <p style="text-align: center;">
+      <p style="text-align: center">
         Take our quick quiz to help us know what foods you're into each month!
       </p>
-      <div style="text-align: center;">
+      <div style="text-align: center">
         <a href="foodQuiz/Quiz.html" class="quiz-button">Take Our Quiz</a>
       </div>
     </section>
 
     <section id="info">
       <h2>Upcoming Events</h2>
-      <p style="text-align: center;">Mark your calendar for these exciting community food events!</p>
+      <p style="text-align: center">
+        Mark your calendar for these exciting community food events!
+      </p>
       <div class="news-grid">
         <div class="news-box">Berry U-Pick – June 8</div>
         <div class="news-box">Produce Pop-Up – June 15</div>
         <div class="news-box">Growing Citrus Workshop – July 6</div>
       </div>
     </section>
+  </body>
+</html>

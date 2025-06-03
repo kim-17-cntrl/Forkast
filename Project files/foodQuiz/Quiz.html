@@ -6,17 +6,17 @@
     <style>
       body {
         font-family: "Comic Sans MS", cursive, sans-serif;
-        background-color: #b7d8b5;
-        color: #333;
+        background-color: #f5f5dc;
+        color: #46bbb6;
         text-align: center;
         padding: 40px;
       }
 
       .survey-box {
-        background-color: #9fd295;
+        background-color: #d0e8d0;
         padding: 30px;
         border-radius: 25px;
-        border: 3px solid #1b5e20;
+        border: 3px solid #46bbb6;
         max-width: 600px;
         margin: auto;
       }
@@ -51,7 +51,7 @@
       button {
         margin: 10px 15px;
         padding: 12px 24px;
-        background-color: #1b5e20;
+        background-color: #46bbb6;
         border: none;
         border-radius: 12px;
         cursor: pointer;
@@ -61,7 +61,7 @@
       }
 
       button:hover {
-        background-color: #1b5e20;
+        background-color: #41a8a3;
       }
 
       .hidden {
@@ -71,10 +71,13 @@
   </head>
   <body>
     <div class="survey-box" id="step1">
-      <h2>Let's get to know you a little better to personalize your sustainable food journey!</h2>
+      <h2>
+        Let's get to know you a little better to personalize your sustainable
+        food journey!
+      </h2>
       <div class="question">What's your name?</div>
-      <input type="text" id="name" placeholder="Enter your name"/>
-      <br/><br/>
+      <input type="text" id="name" placeholder="Enter your name" />
+      <br /><br />
       <button onclick="nextStep()">Next</button>
     </div>
 
@@ -91,20 +94,26 @@
     <div class="survey-box hidden" id="step3">
       <div class="question">What is your zipcode?</div>
       <div class="answers">
-      <label><input type="text" id="Zipcode" placeholder="Enter your zipcode"/></label>
-    </div>
-      <br/><br/>
+        <label
+          ><input type="text" id="Zipcode" placeholder="Enter your zipcode"
+        /></label>
+      </div>
+      <br /><br />
       <button onclick="prevStep()">Back</button>
       <button onclick="nextStep()">Next</button>
     </div>
 
     <div class="survey-box hidden" id="step4">
-      <div class="question"> Which sustainable foods do you like or looking for? </div>
+      <div class="question">
+        Which sustainable foods do you like or looking for?
+      </div>
       <div class="answers">
         <label><input type="checkbox" value="Fruit" /> Fruit</label>
         <label><input type="checkbox" value="Protein" /> Protein</label>
         <label><input type="checkbox" value="Fresh Veggies" /> Veggies</label>
-        <label><input type="checkbox" value="Carbohydrates" /> Carbohydrates</label>
+        <label
+          ><input type="checkbox" value="Carbohydrates" /> Carbohydrates</label
+        >
         <label><input type="checkbox" value="Dairy" /> Dairy</label>
         <label><input type="checkbox" value="Anything" /> Anything</label>
       </div>
@@ -134,9 +143,9 @@
     <div class="survey-box hidden" id="thankyou">
       <h2>Thank you, <span id="userName"></span>!</h2>
       <p>
-        This helps us know what foods you're into each month, and how to help you acess them. We appreciate your
-        input! <br>
-      <button id="nextStepButton">Next Step</button>
+        This helps us know what foods you're into each month, and how to help
+        you acess them. We appreciate your input! <br />
+        <button id="nextStepButton">Next Step</button>
       </p>
     </div>
 
@@ -176,9 +185,8 @@
       }
 
       document.getElementById("nextStepButton").onclick = function () {
-                  window.location.href = "../calender/calender.html";
-              };
-
+        window.location.href = "../calender/calender.html";
+      };
     </script>
   </body>
 </html>

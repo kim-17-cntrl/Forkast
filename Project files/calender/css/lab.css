@@ -102,4 +102,24 @@ body {
     font-size: 1rem;
   }
 
-
+  .news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .news-box {
+    background: #D0E8D0;
+    border-radius: 10px;
+    width: 160px;
+    height: 180px;
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
