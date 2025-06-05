@@ -96,3 +96,83 @@
     </div>
   </body>
 </html>
+
+<section
+  style="
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #d6f0de;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  "
+>
+  <h2 style="color: #24b3a2; text-align: center; margin-bottom: 20px">
+    Suggest a New Pop-Up
+  </h2>
+  <p style="text-align: center; color: #3b796f">
+    Know about a local produce event or pop-up we should add to the map? Let us
+    know below!
+  </p>
+
+  <form
+    action="https://formspree.io/f/yourformid"
+    method="POST"
+    style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px"
+  >
+    <label>
+      Your Name:
+      <input
+        type="text"
+        name="name"
+        required
+        style="
+          width: 100%;
+          padding: 8px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        "
+      />
+    </label>
+    <label>
+      Email (optional):
+      <input
+        type="email"
+        name="email"
+        style="
+          width: 100%;
+          padding: 8px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        "
+      />
+    </label>
+    <label>
+      Event Info (date, time, location):
+      <textarea
+        name="message"
+        rows="5"
+        required
+        style="
+          width: 100%;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        "
+      ></textarea>
+    </label>
+    <button
+      type="submit"
+      style="
+        background-color: #24b3a2;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      "
+    >
+      Submit Suggestion
+    </button>
+  </form>
+</section>
