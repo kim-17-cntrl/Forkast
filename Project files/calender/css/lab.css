@@ -19,23 +19,17 @@ header {
 }
 
 /* NAVIGATION */
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
 
 nav a {
-  color: #46bbb6;
   text-decoration: none;
-  margin-left: 25px;
+  color: #46bbb6;
   font-weight: 600;
-  font-size: 1.1rem;
+  margin: 0 15px;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #2d8b89;
+  color: #1b5e20;
 }
 
 /* ==== BODY & TYPOGRAPHY ==== */
